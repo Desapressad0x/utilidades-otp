@@ -10,7 +10,7 @@
 void bytes(void *buffer, size_t tamanho) {
     if (!RtlGenRandom(buffer, tamanho)) {
         puts("[x] erro ao gerar os números aleatórios.");
-		exit(1);
+	exit(1);
     }
 }
 
@@ -36,7 +36,7 @@ void apagar(const char *arquivo) {
         remove(arquivo);
     } else {
         puts("[x] erro ao abrir o arquivo para remoção segura.");
-		exit(1);
+	exit(1);
     }
 }
 
@@ -53,7 +53,7 @@ void gerar_arquivo_chave(const char *nome_arquivo, size_t tamanho) {
         fclose(arq_chave);
     } else {
         puts("[x] erro ao gerar arquivo de chave");
-		exit(1);
+	exit(1);
     }
 }
 
